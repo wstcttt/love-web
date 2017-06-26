@@ -64,7 +64,9 @@ server {
 }
 END
 cd /www
+echo "Starting gunicorn..."
+gunicorn -w 4 -b 0.0.0.0:5000 run:app > /dev/null 2>&1 &
+echo "Starting nginx..."
 service nginx start
 nginx -s reload
-gunicorn -w 4 -b 0.0.0.0:5000 run:app
 echo "Done"
