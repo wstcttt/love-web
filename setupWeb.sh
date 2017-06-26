@@ -14,7 +14,7 @@ yum install nginx
 mkdir -p /www
 cp -r * /www
 
-cat > /etc/nginx/conf.d/default.conf << END
+cat > /etc/nginx/conf.d/default.conf << 'END'
 server {
     listen       80;
     server_name  localhost;
