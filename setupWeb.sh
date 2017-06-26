@@ -64,7 +64,7 @@ server {
 }
 END
 cd /www
-gunicorn -w 4 -b 0.0.0.0:5000 run:app
 service nginx start
 nginx -s reload
+gunicorn -w 4 -b 0.0.0.0:5000 run:app
 echo "Done"
