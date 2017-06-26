@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width,user-scalable=no">
+
+
+<meta name="format-detection" content="telephone=yes">
+<title>To颖宝宝</title>
+<style type="text/css">
+body {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	font-size: 25px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	background: #f3961c;
+}
+
+div {
+	text-align: left;
+}
+
+.tittle {
+	width: 100%;
+	background: #f3961c;
+	top: 0px;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	position: fixed !important;
+	display: none;
+	cursor: pointer;
+}
+
+.big {
+	font-family: "微软雅黑";
+	color: #FFF;
+	font-size: 35px;
+}
+
+
+</style>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script>
+
+
+$(document).ready(function(e) {
+	$(document).scrollTop(300); /*移动滚动条到最下方*/
+	//timer=setInterval("$.change()",6000);
+	//clearInterval(timer);
+	t=1;
+	$("#t-"+t).fadeIn();
+	
+	$(document).click(
+	function(){
+		$.change();
+		}
+	);
+	
+	/*切换*/
+	$.change=function(){
+		t++;
+		if(t<=$(".tittle").length){
+		$(".tittle").slideUp(1500).fadeOut();
+		$("#t-"+t).slideDown(1500).fadeIn();
+		}else{
+			localStorage["index"]="1";
+			window.location="proposal.html";
+			}
+		}
+});
+</script>
+
+</head>
+
+<body>
+	<center>
+		<div class="tittle" id="t-1" style="display: block;">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center"> <span class="big">点击</span>一下试试...</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-2" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center"><span class="big">曾经</span>，有一只小龙虾</td>
+				</tr>
+			</tbody></table>
+		</div>
+
+		<div class="tittle" id="t-3" style="">
+			<table width="100%" border="0" height="100%">
+				<tbody><tr>
+					<td align="center">他一个人<span class="big">安静的</span>生活着</td>
+				</tr>
+			</tbody></table>
+		</div>
+	</center>
+
+	<div class="tittle" id="t-4" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">没有</span>目标</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-5" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center">也看不到<span class="big">未来</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-6" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">突然</span>有一天</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-7" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center">小龙虾<span class="big">撞了大运</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-8" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center">他遇到了人生中...</td>
+			</tr>
+		</tbody></table>
+	</div>
+
+	<div class="tittle" id="t-9" style="">
+		<table width="100%" border="0" height="100%">
+			<tbody><tr>
+				<td align="center"><span class="big">最灿烂的阳光</span></td>
+			</tr>
+		</tbody></table>
+	</div>
+	
+
+
+
+</body></html>

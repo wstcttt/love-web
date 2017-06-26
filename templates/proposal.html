@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="../static/css/default_dev.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="../static/js/jquery.js"></script>
+	<script type="text/javascript" src="../static/js/garden_dev.js"></script>
+    <script type="text/javascript" src="../static/js/functions_dev.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">2016年1月15日，牡丹园</span><br />
+				<span class="space"/>我们第一次见面，你笑得那么甜，那么温暖<br />
+				<span class="space"/>那一刻，仿佛有什么东西在我内心里融化<br />
+				<span class="space"/>在地铁分别的时候，我鼓起勇气加了你的微信<br />
+				<span class="space"/>因为在那时，我终于看到了人生路上的光亮<br />
+				<span class="comments">2016年1月24日，新中关</span><br />
+				<span class="space"/>你即将出发去哈尔滨，我没有办法陪你过三天后的生日<br />
+				<span class="space"/>我只好送你几朵马蹄莲，因为你说这是你最喜欢的花<br />
+				<span class="comments">2016年2月2日，西土城</span><br />
+				<span class="space"/>我们在地铁站外聊了好久<br />
+				<span class="space"/>你说你需要时间，我却觉得我整个人比外面的寒风还冷<br />
+				<span class="comments">2016年2月5日，凌晨3点30分</span><br />
+				<span class="space"/>我失眠了，想了很多很多<br />
+				<span class="space"/>我给你发了一大段微信，你也给我回了一大段<br />
+				<span class="comments">2016年4月15日，重生</span><br />
+				<span class="space"/>没有你的一个多月，我犹如行尸走肉<br />
+				<span class="space"/>没有意义的生活，我只能靠不停的工作来麻痹自己<br />
+				<span class="space"/>突然间收到你的微信，就像黑暗中看到了一点星光<br />
+				<span class="space"/>我的人生又有了方向<br />
+				<span class="comments">2016年4月29日</span><br />
+				<span class="space"/>你陪我过的第一个生日，还送给了我你拼的乐高<br />
+				<span class="comments">2016年5月8日</span><br />
+				<span class="space"/>你说你要去跑步，我厚着脸皮加入了你<br />
+				<span class="space"/>我们第一次一起看了电影，百鸟朝凤<br />
+				<span class="comments">2016年6月10日</span><br />
+				<span class="space"/>第一次惹你生气的我，手足无措，内疚自责<br />
+				<span class="comments">2016年8月</span><br />
+				<span class="space"/>这是忙碌又辛苦的一个多月，充实而又快乐<br />
+				<span class="space"/>我希望能靠每天陪你一起自习来给你动力<br />
+				<span class="comments">2016年8月20日，藏书馆</span><br />
+				<span class="space"/>你哭了，我的心很疼，我只能紧紧握住你的手<br />
+				<span class="space"/>你说可得想好了，牵了就不能放开<br />
+				<span class="space"/>我不放开，一辈子都不会放<br />
+				<span class="comments">2016年9月19日，布尔津</span><br />
+				<span class="space"/>第一次和你出去玩耍，再美丽的景色也比不上和你一起的甜蜜<br />
+				<span class="comments">花园北路乙28号院9号楼</span><br />
+				<span class="space"/>太多太多的回忆在这里，有伤心的我，也有生气的你<br />
+				<span class="space"/>但更多的，是幸福快乐在一起的我和你<br />
+				<span class="keyword">亲爱的颖宝宝，我们的生活才刚刚开始<br />
+				<span class="keyword">我愿意牵着你的手，一直走下去<br />
+				<span class="keyword">我愿意爱你，直到老去<br />
+				<span class="comments">2017年7月7日</span><br />
+				<span class="space"/>亲爱的，嫁给我吧！<br />			
+				<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+					&nbsp;颖宝宝，你愿意嫁给我吗？
+					</div>
+					<div id="loveu">
+						<div>
+						<a href="love.html">我愿意</a>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="#" onclick="alert('宝宝再考虑一下吧 :(');">不愿意</a>
+						</div>
+						<br/>
+						<div class="signature">— 永远爱你的小龙虾</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2016, 8, 20);
+		together.setHours(20);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			//setTimeout(function () {
+			//	startHeartAnimation();
+			//}, 100000);
+
+			//timeElapse(together);
+			//setInterval(function () {
+			//	timeElapse(together);
+			//}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
