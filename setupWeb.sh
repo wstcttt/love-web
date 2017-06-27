@@ -13,6 +13,7 @@ rpm -ivh http://nginx.org/packages/centos/6/noarch/RPMS/nginx-release-centos-6-0
 yum install nginx
 mkdir -p /www
 cp -r * /www
+chmod -R 777 /www
 
 cat > /etc/nginx/conf.d/default.conf << 'END'
 server {
