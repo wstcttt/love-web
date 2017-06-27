@@ -82,8 +82,12 @@ function startHeartAnimation() {
 				} else {
 					progress++;
 				}
-				if (current == '7') {
+				if (current == '责') {
+					$('html, body').animate({scrollTop:$(document).height()}, 'slow');
+				}
+				if (current == '.') {
 					startHeartAnimation();
+					$('html, body').animate({scrollTop:0}, 'slow');
 				}
 				$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
 				if (progress >= str.length) {
@@ -131,7 +135,7 @@ function adjustWordsPosition() {
 }
 
 function adjustCodePosition() {
-	$('#code').css("margin-top", -170);
+	$('#code').css("margin-top", 0);
 }
 
 function showLoveU() {
